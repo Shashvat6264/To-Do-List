@@ -131,3 +131,13 @@ table{
 .add-item button:hover{
     background-color: rgb(55, 142, 255);
 }
+
+@media only screen and (max-width:900px){
+    #header h1{
+        font-size: 95px;
+    }
+
+    #header p{
+        font-size: 55px;
+    }
+}
