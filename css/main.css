@@ -127,3 +127,9 @@ table{
 .add-item button:hover{
     background-color: rgb(55, 142, 255);
 }
+
+@media only screen and (max-width: 600px){
+    #header{
+        width:100%;
+    }
+}
