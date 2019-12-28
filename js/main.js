@@ -65,6 +65,7 @@ function change(elmnt){
     sub.onclick = function() {addtodo()};
     var text = elmnt.childNodes[1];
     text.className = "todo";
+    text.onclick = function() {changeclass(elmnt)};
     var chan = elmnt.childNodes[0];
     chan.childNodes[0].src = "css/img/circle-li.png";
 }
