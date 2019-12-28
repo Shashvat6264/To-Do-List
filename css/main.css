@@ -1,0 +1,129 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#header{
+    background-image: url('img/head-wall.jpg');
+    background-size: cover;
+    color: black;
+    height: 60%;
+}
+
+#header h1{
+    position: relative;
+    top: 25%;
+    left: 46%;
+    font-size: 55px;
+}
+
+#header p{
+    color:black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    left:0.7%;
+}
+
+table{
+    border-collapse: collapse;
+    position: relative;
+    width: 100%;
+}
+
+.to{
+    background-color: rgb(245, 241, 241);
+    width: 5%;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.to:hover{
+    background-color: rgb(230, 111, 0);
+}
+
+.todo{
+    background-color: rgb(245, 241, 241);
+    color: rgb(1, 1, 59);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    padding: 20px;
+    width: 90%;
+}
+
+.todo:hover{
+    background-color: rgb(230, 111, 0);
+}
+
+.done{
+    background-color: rgb(230, 111, 0);
+    color: rgb(223, 223, 223);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    padding: 20px;
+    width: 90%;
+}
+
+.done:hover{
+    color: rgb(1, 1, 59);
+}
+
+.but{
+    width: 5%;
+    background-color: rgb(245, 241, 241);
+}
+
+.but button{
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.but button:hover{
+    background-color: rgb(230, 111, 0);
+}
+
+.add-item{
+    position: relative;
+}
+
+.add-item input{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    left: 45%;
+}
+
+.add-item button{
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 49%;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.add-item button:hover{
+    background-color: rgb(55, 142, 255);
+}
