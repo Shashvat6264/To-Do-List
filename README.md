@@ -24,4 +24,4 @@ Click the text of the task again after amrking it done to remove it.
 ### To upgrade the task
 Click on upgrade button.
 Then upgrade the task using the input box. 
-Then clcik on Submit to upgrade it.
+Then click on Submit to upgrade it.
