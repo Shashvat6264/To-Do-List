@@ -1,7 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -10,6 +9,8 @@ body{
     background-size: cover;
     color: black;
     height: 60%;
+    position: relative;
+    width:100%;
 }
 
 #header h1{
@@ -17,6 +18,7 @@ body{
     top: 25%;
     left: 46%;
     font-size: 55px;
+    width: 30%;
 }
 
 #header p{
@@ -27,6 +29,7 @@ body{
     position: relative;
     top: 25%;
     left:0.7%;
+    width:95%;
 }
 
 table{
@@ -127,10 +130,4 @@ table{
 
 .add-item button:hover{
     background-color: rgb(55, 142, 255);
-}
-
-@media only screen and (max-width: 600px){
-    #header{
-        width:100%;
-    }
 }
