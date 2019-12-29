@@ -7,7 +7,7 @@ body{
 #header{
     background-image: url('img/head-wall.jpg');
     background-size: cover;
-    color: black;
+    color: rgb(255, 255, 255);
     height: 60%;
     position: relative;
     width:100%;
@@ -22,7 +22,7 @@ body{
 }
 
 #header p{
-    color:black;
+    color:rgb(255, 255, 255);
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -144,7 +144,7 @@ table{
 
 #footer a{
     text-decoration: none;
-    color: rgb(0, 49, 156);
+    color: rgb(88, 88, 88);
 }
 
 #footer a:hover{
