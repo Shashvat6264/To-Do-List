@@ -45,7 +45,7 @@ function changeclass(elmnt){
 }
 
 function changetype(elmnt){
-    elmnt.remove();
+    fadeout(elmnt);
 }
 
 function upgrade(elmnt){
@@ -93,4 +93,17 @@ function declass(elmnt){
     var chan = elmnt.childNodes[0];
     chan.childNodes[0].src = 'css/img/circle-li.png';
     chan.onclick = function() {star(elmnt)};
+}
+function fadeout(elmnt){
+    var op = 1;
+    var id = setInterval(frame, 5);
+    function frame(){
+        if (op == 0){
+            clearInterval(id);
+        }
+        else{
+            elmnt.style.opacity = op;
+            op -= 0.2;
+        }
+    }
 }

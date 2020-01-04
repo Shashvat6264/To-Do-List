@@ -61,6 +61,16 @@ table{
     width: 90%;
 }
 
+td{
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 .todo:hover{
     background-color: rgb(230, 111, 0);
 }
