@@ -36,12 +36,16 @@ function addtodo(){
 }
 
 function changeclass(elmnt){
-    nel = elmnt.childNodes[1];
+    var nel = elmnt.childNodes[1];
     nel.className = "done";
-    nel.onclick = function() {changetype(this.parentNode)};
     var chan = elmnt.childNodes[0];
     chan.childNodes[0].src = 'css/img/tick-li.png';
-    chan.onclick = function() {declass(elmnt)};
+    nel.onclick = function() {declass(elmnt)};
+    var button = elmnt.childNodes[2].childNodes[0];
+    var node = document.createTextNode("Delete");
+    button.appendChild(node);
+    button.childNodes[0].remove();
+    button.onclick = function() {changetype(elmnt)};
 }
 
 function changetype(elmnt){
@@ -94,6 +98,12 @@ function declass(elmnt){
     var chan = elmnt.childNodes[0];
     chan.childNodes[0].src = 'css/img/circle-li.png';
     chan.onclick = function() {star(elmnt)};
+    var button = elmnt.childNodes[2].childNodes[0];
+    var node = document.createTextNode("Upgrade");
+    button.appendChild(node);
+    button.childNodes[0].remove();
+    button.onclick = function() {upgrade(elmnt)};
+
 }
 function fadeout(elmnt){
     var op = 1;
