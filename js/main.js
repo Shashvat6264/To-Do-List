@@ -46,6 +46,7 @@ function changeclass(elmnt){
 
 function changetype(elmnt){
     fadeout(elmnt);
+    elmnt.remove()
 }
 
 function upgrade(elmnt){
